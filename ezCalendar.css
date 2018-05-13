@@ -1,0 +1,126 @@
+.ezCalender{
+  height: 100%;
+  font-family: Microsoft JhengHei, Times New Roman;
+  font-weight: 100; 
+}
+
+.ezCalender .monthNav .lastMonth,
+.ezCalender .monthNav .nextMonth {
+  cursor: pointer;
+}
+
+.ezCalender .monthNav .lastMonth:hover,
+.ezCalender .monthNav .nextMonth:hover {
+  text-decoration: underline;
+}
+
+
+.ezCalender .day{
+  color: rgba(0,0,0,.2);
+	background-color: rgba(255, 255, 255, .8);
+	font-weight: bolder;
+	height: 16.5%;
+  overflow: auto;
+}
+
+.ezCalender .day:hover{
+	cursor: pointer;
+  font-weight: 900; 
+}
+
+.ezCalender .day.today{
+  text-decoration: underline;
+}
+
+.ezCalender .day.opacity5{
+  color: rgba(102, 102, 102, .1);
+	background-color: rgba(255,255,255,0.3) ;
+}
+
+.ezCalender .day.holiday {
+  background-color: rgba(255, 246, 246, 1);
+  color: rgb(245, 177, 208);
+}
+
+.ezCalender .day.holiday.opacity5 {
+  color: rgb(228, 145, 183, .1);
+}
+
+.ezCalender .day .text{
+  font-family: serif, Times New Roman;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.ezCalender .dates .week, 
+.ezCalender .dates .days{
+    -webkit-column-count: 7; /* Chrome, Safari, Opera */
+    -moz-column-count: 7; /* Firefox */
+    column-count: 7;
+    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5px; /* Firefox */
+    column-gap: 5px;
+    -webkit-column-width: 14%; /* Chrome, Safari, Opera */
+    -moz-column-width: 14%; /* Firefox */
+    column-width: 14%;
+}
+
+.ezCalender .dates .days{
+	height: 90%;
+}
+
+.ezCalender .monthNav{
+	text-align: center;
+	height: 7%;
+	line-height: 50px;
+	margin: auto;
+	margin-bottom: 20px;
+	background-color: rgba(3,169,244 , 0.5);
+	color: white;
+	width: 90%;
+}
+
+.ezCalender .monthNav button{
+	height: 100%;
+	padding: 0px;
+}
+
+.ezCalender .monthNav button span{
+	vertical-align: sub;
+}
+
+.ezCalender .monthTitle{
+	font-size: 36px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ezCalender .backToday{
+	float: right;
+	margin-right: 20px;
+}
+
+.ezCalender .dates{
+	height: 87%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ezCalender .dates .week{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+	height: 4%;
+	min-height: 26px;
+}
+
+.ezCalender .dates .week div{
+	background-color: rgba(255, 255, 255, .5);
+}
+
